@@ -70,7 +70,7 @@ pycharm运行截图
 
    ![image-20221216212544032](README.assets/image-20221216212544032.png)
 
-   通过这个api可以直接获取返回的json数据，但又发现这个api也用了Clouflare的服务，并且不允许跨域调用。但selenium只能更改UA，不能更改headers中的Origin和Referer来伪装。于是只好放弃从这个网站爬数据，转而爬雅虎财经的数据。但雅虎财经在国内无法直接访问，需要先挂代理。
+   通过这个api可以直接获取返回的json数据，但又发现这个api也用了ClouFlare的服务，并且不允许跨域调用。但selenium只能更改UA，不能更改headers中的Origin和Referer来伪装。于是只好放弃从这个网站爬数据，转而爬雅虎财经的数据。但雅虎财经在国内无法直接访问，需要先挂代理。
 
    雅虎财经可以直接访问api来获取股票数据，不再赘述。
 
@@ -94,7 +94,7 @@ pycharm运行截图
 
 2. lstm.py:
 
-   LSTM训练使用的是谷歌的tensorflow架构，如果您的电脑中是英伟达显卡的话可以尝试下载响应的CUDA和cudnn以加快训练速度
+   LSTM训练使用的是谷歌的tensorflow架构，如果您的电脑中是英伟达显卡的话可以尝试下载相应的CUDA和cudnn以加快训练速度
 
 ![image-20221216215220167](README.assets/image-20221216215220167.png)
 
