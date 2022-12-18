@@ -4,7 +4,7 @@
 
 开发环境：
 
-- OS: Ubuntu 20.04.5 LTS x63
+- OS: Ubuntu 20.04.5 LTS x64
 - Chrome: 108.0.5359.94 (Official Build) (64-bit)
 - GPU: Nvidia GeForce 1650 4GB
 -  CUDA: 11.4
