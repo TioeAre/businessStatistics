@@ -32,7 +32,7 @@ class Lstm(object):
         self.x_valid, self.y_valid = [], []
         self.x_test, self.y_test = [], []
 
-    def read_data(self, fileName=[]):
+    def read_data(self, fileName=None):
         """从文件读取数据
 
         Args:
@@ -42,6 +42,8 @@ class Lstm(object):
             data1 (numpy.array): 将汇率，原油，黄金和股票数据组合为训练数据
             label (numpy.array): 数据的标注集，表示为股票的经调整收市价
         """
+        if fileName is None:
+            fileName = []
         with open(fileName[0], encoding='utf-8') as f:
             stock_data = json.load(f)
         with open(fileName[1], encoding='utf-8') as f:
@@ -248,12 +250,14 @@ class Lstm(object):
         # 保存预测数据
         np.savetxt('./Data/predict_just_stock.csv', closing_price.reshape(1, -1)[0], delimiter=',')
 
-    def tran(self, fileName=[]):
+    def tran(self, fileName=None):
         """训练网络
 
         Args:
             fileName (list): 读取文件名的列表
         """
+        if fileName is None:
+            fileName = []
         data, label = self.read_data(fileName)
         self.divide_data(data, label)
         self.lstm(label)

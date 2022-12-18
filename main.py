@@ -12,6 +12,7 @@ def main():
     stock = Data()
     tran = Lstm()
     ana = Analysis()
+
     stock.get_data()
     tran.tran(stock.fileName)
     ana.analysis()

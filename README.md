@@ -21,6 +21,7 @@
 ├── Analysis: 数据分析
 │   └── analysis.py
 ├── Data: 数据存放
+│   ├── analysis.json
 │   ├── CNY.json
 │   ├── Gold.json
 │   ├── Oil.json

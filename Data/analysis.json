@@ -1,0 +1,24 @@
+{
+  "mean": {
+    "true": 23965.1784,
+    "predict": 25462.4038,
+    "pre_just_stock": 23506.4904
+  },
+  "mean square error": {
+    "predict": 2985487.0991,
+    "pre_just_stock": 2985487.0991
+  },
+  "p": {
+    "predict": 9e-09,
+    "pre_just_stock": 0.1316
+  },
+  "t": {
+    "predict": -5.7932,
+    "pre_just_stock": 1.5093
+  },
+  "var": {
+    "true": 15945964.9292,
+    "predict": 15581162.0349,
+    "pre_just_stock": 27648736.7468
+  }
+}
