@@ -36,7 +36,7 @@
 ├── LSTM: 网络模型
 │   └── lstm.py
 ├── main.py: 主函数
-├── README.assets: reeadme图片
+├── README.assets: readme图片
 │   ├── 2022-12-16_21-06.png
 │   ├── image-20221216212258851.png
 │   ├── image-20221216212544032.png
